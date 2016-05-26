@@ -1,4 +1,4 @@
-function [ ] = myfigure( Location,Source,P )
+function [ ] = MyFigure( Location,Source,P )
 %figure function
 figure;
 scatter3(Location(:,1),Location(:,2),Location(:,3));

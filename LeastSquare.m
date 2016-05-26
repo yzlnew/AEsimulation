@@ -36,4 +36,4 @@ temp=A'*A;
 res=(A'*A)\A'*B;
 P=res(1:3,1)';
 err=pdist2(P,Source);
-%myfigure(Location,Source,P);
+%MyFigure(Location,Source,P);

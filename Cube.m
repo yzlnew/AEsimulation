@@ -14,7 +14,7 @@ c=[c1;c2;c3;c4;c5;c6;c7;c8];
 Error=zeros(8,1);
 for i=1:8
     d=pdist2(c(i,:),Location);
-    Error(i)=err(t,d,N);
+    Error(i)=ErrFunc(t,d,N,1);
 end
 [~,I]=min(Error);
 Center=c(I,:);
