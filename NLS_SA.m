@@ -45,7 +45,7 @@ end
 
 err_NLS=pdist2(P,Source);
 
-a=0.95;length=2;scale=50;b=0.95;TI=10;TE=0.001;
+a=0.8;length=1;scale=50;b=0.95;TI=10;TE=0.001;
 
 T=TI;
 while(T>TE)
