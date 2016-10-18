@@ -24,4 +24,8 @@ if type==3
     err=sumsqr(d-v*t);
 end
 
+if type==4
+    v=3000*1000;
+    err=min([sumabs(d-v*t),sumsqr(d-v*t)]);
+
 end

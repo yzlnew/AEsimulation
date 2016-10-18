@@ -1,4 +1,4 @@
-%clc,clear;
+clc,clear;
 %set scale=1000 to simplfy mm situation
 scale=1000;
 %sonic speed
@@ -44,7 +44,7 @@ while flag>0
     flag=flag-1;
 end
 err=pdist2(P,Source);
-%MyFigure(Location,Source,P);
+MyFigure(Location,Source,P);
 % length=5;
 % [Center,a]=betterCube(P,length,Location,t,N);
 % step=3;

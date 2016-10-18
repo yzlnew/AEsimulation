@@ -1,4 +1,4 @@
-clc,clear;
+%clc,clear;
 %set scale=1000 to simplfy mm situation
 scale=1000;
 %sonic speed
@@ -45,16 +45,18 @@ end
 
 err_NLS=pdist2(P,Source);
 
-a=0.8;length=1;scale=50;b=0.95;TI=10;TE=0.001;
-
+a=0.95;
+length=2;
+scale=50;TI=10;TE=0.001;
+b=0.95;
 T=TI;
 while(T>TE)
     step=0;
     while(step<length)
-    PreErr=ErrFunc(t,R,N,2);
+    PreErr=ErrFunc(t,R,N,4);
     CurP=P+scale*(2*rand(1,3)-1);
     CurR=pdist2(CurP,Location);
-    CurErr=ErrFunc(t,CurR,N,2);
+    CurErr=ErrFunc(t,CurR,N,4);
     
     deltaFunc=CurErr-PreErr;
     
